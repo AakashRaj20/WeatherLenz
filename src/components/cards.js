@@ -56,7 +56,7 @@ export default function Card(props) {
     const formattedData = transformWeatherData(apiData)
 
     return (
-        <div className="sub--card">
+        <div className="weather--card">
          {formattedData?.map(([key, wdDatum]) => (
             <SubCard
                 key={key}
