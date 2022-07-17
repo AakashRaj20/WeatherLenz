@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #121213;
+  overflow-x: hidden;
+}
+
+.weather-app {
+  background: #121213;
+}
+
+.loader {
+  margin: 20% 45%;
+  width: 100%;
+  height: 100vh;
+}
+
+.search--container {
+  background: #121213;
+  padding: 1rem;
+}
+
+.search--bar {
+  display: flex;
+  margin: 3%;
+  flex-direction: row;
+  align-items: center;
+  background: #BB86F6;
+  opacity: 1.1;
+  box-shadow: 0px 4px 4px #5600e7;
+  border-radius: 3.4375rem;
+  margin-bottom: 0;
+  color: white;
+}
+
+.form--search {
+  all: unset;
+  width: 100%;
+  background:transparent;
+  padding: 0.8% 1.5%;
+  border: none;
+  font-weight: 300;
+}
+
+.target--btn {
+  background: transparent;
+  margin: 0.5% 0.8%;
+  border: none;
+}
+
+.target--img {
+  margin-bottom: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: #BB86F6;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 5px #5600e7;
+  margin: 2rem 4rem auto;
+}
+
+.currentInfo--div {
+  padding: 0.5% 5% 0.5% 2%;
+  margin: 1rem;
+  width: 20rem;
+}
+
+.info--city {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 1.4rem;
+}
+
+.info--temp {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0.6rem 0;
+}
+
+.info--feels {
+  margin: 0;
+  font-weight: 300;
+}
+
+.info--sunTime {
+  margin: 0.3rem auto;
+  font-weight: 300;
+}
+
+.info--weather {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.chart {
+  position: relative;
+  width: 80rem;
+  margin: 5rem 5rem 2rem auto;
+}
+
+.chart--humidity {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #dbb2fe;
+  color: white;
+  width: 7rem;
+  margin: auto 1rem auto 2rem;
+  box-shadow: 0px 3px 3px #3700B3;
+}
+
+.chart--wind {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #dbb2fe;
+  color: white;
+  width: 7rem;
+  box-shadow: 0px 3px 3px #3700B3;
+}
+
+button:hover{
+  background: #6200ed;
+  transition: 0.7s;
+}
+
+.main--card {
+  margin: auto 3rem;
+}
+
+.sub--card {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+}
+
+.card {
+  position: relative;
+  width: 20rem;
+  margin: 3rem 1.1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  background: #BB86F6;
+  color: white;
+  box-shadow: 0px 5px 5px #5600e7;
+}
+
+.card--date {
+ font-weight: 400;
+}
+
+.card--icon {
+  width: 6rem;
+  margin: auto;
+}
+
+.card--1{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+  margin:2rem auto 20rem;
+}
+
+.card--description{
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.card--2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  margin:2rem auto 1rem ;
+}
+
+.card--info {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.footer {
+  background: #BB86F6;
+  margin: 22rem 3rem 0rem;
+  box-shadow: 0px 5px 5px #5600e7;
+  border-radius: 1rem;
+  position: relative;
+  padding: 2rem;
+}
+
+img {
+  width : 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon--img1 {
+  margin-left: 38rem;
+}
+
+.icon--img2 {
+  margin-left: 10rem;
+}
+
+.icon--img3 {
+ margin-left: 10rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+.footer--credit {
+  margin: auto auto 0 45rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dbb3ff;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+.loader {
+  margin: 35% 35%;
+}
+  
+.search--bar {
+  margin: 3% 0.5rem 2rem;
+}
+
+.form--search {
+  padding: 0.7rem 1.3rem;
+}
+
+.target--btn {
+  margin: 1rem 0.7rem 0;
+}
+
+.target--img{
+  margin-bottom: 1rem;
+}
+
+.info {
+  flex-direction: column;
+  margin: auto 0.5rem;
+}
+
+.currentInfo--div {
+  margin: auto auto 0 2rem;
+}
+
+.chart {
+  width: 21rem;
+  margin: 2rem 1rem 1.5rem 0;
+}
+
+.chart--humidity {
+  margin-bottom: 1.5rem;
+}
+
+.chart--wind {
+  margin-left: 3rem;
+}
+
+.sub--card {
+  flex-direction: column;
+}
+
+.card {
+  margin: 3rem 4rem 1rem -1.7rem;
+}
+
+.footer {
+  margin: 105rem 3.7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 2rem; 
+}
+
+.icon--img1 {
+  margin-left: 0.5rem;
+}
+
+.icon--img2 {
+  margin-left: 0.5rem;
+}
+
+.icon--img3 {
+  margin-left: 0.5rem;
+}
+
+.footer--credit {
+  margin: auto 0rem auto 0.5rem;
+  font-size: 0.7rem;
+}
+
+}
