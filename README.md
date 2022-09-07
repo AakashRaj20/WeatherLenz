@@ -276,4 +276,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## A very thankyou who guided me in my project.
+## A very Thankyou to everyone who guided me in my project.
