@@ -3,9 +3,7 @@
 
 Hi folks, this is the weather project called WeatherLenz, that I have developed using #reactjs.
 
-Link to the #webapplication :https://lnkd.in/dqEkdenv
-
-Github Repository Link : https://lnkd.in/d99Kc-tt
+Link to the Web-App :https://lnkd.in/dqEkdenv
 
 Tech Stack used in the project :
  1. HTML5
