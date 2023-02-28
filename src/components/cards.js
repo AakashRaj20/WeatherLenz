@@ -8,6 +8,7 @@ export default function Card(props) {
     const city = props.city
 
     const [apiData, setApiData] = useState({})
+    console.log(apiData);
 
     const apiKey = API_KEY
     const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`
